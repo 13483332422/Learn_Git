@@ -261,7 +261,11 @@ git merge dev
 此时 我们可以删去 master第二次做的修改(或者回退到第二次master修改之前的版本)
 这样再经过add 和commit后 再次merge,即可合并成功.
 
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
 
+使用如下命令:
+git log --graph --pretty=oneline --abbrev-commit
+可查看
 
 
 
